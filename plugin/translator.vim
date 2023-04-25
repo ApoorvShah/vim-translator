@@ -14,7 +14,7 @@ let g:loaded_translator= 1
 let g:translator_history_enable          = get(g:, 'translator_history_enable', v:false)
 let g:translator_proxy_url               = get(g:, 'translator_proxy_url', '')
 let g:translator_source_lang             = get(g:, 'translator_source_lang', 'auto')
-let g:translator_target_lang             = get(g:, 'translator_target_lang', 'zh')
+let g:translator_target_lang             = get(g:, 'translator_target_lang', 'en')
 let g:translator_translate_shell_options = get(g:, 'translator_translate_shell_options', [])
 let g:translator_window_borderchars      = get(g:, 'translator_window_borderchars', ['─', '│', '─', '│', '┌', '┐', '┘', '└'])
 let g:translator_window_max_height       = get(g:, 'translator_window_max_height', 999)
@@ -24,7 +24,7 @@ let g:translator_window_type             = get(g:, 'translator_window_type', 'po
 if match(g:translator_target_lang, 'zh') >= 0
   let g:translator_default_engines = get(g:, 'translator_default_engines', ['bing', 'google', 'haici', 'youdao'])
 else
-  let g:translator_default_engines = get(g:, 'translator_default_engines', ['google'])
+  let g:translator_default_engines = get(g:, 'translator_default_engines', ['bing', 'google'])
 endif
 
 let g:translator_status = ''
